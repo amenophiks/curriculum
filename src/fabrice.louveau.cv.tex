@@ -16,7 +16,7 @@
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
 
-\renewcommand{\labelitemi}{$\triangleright$} % list icon as triangle
+%\renewcommand{\labelitemi}{$\triangleright$} % list icon as triangle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PERSONAL DATA
@@ -63,13 +63,18 @@ valgrind}
 {Paris}             % Titre part 3 - Ville
 {}                  % Titre part 4 - 
 {
-  [Automotive] Intégration des fonctions Android Auto et
+Automotive
+\begin{itemize}
+  \item Intégration des fonctions Android Auto et
   Carplay dans les équipements OEM de Parrot. J'accompagne les autorités de
   certification et les équipes produits.
-  \newline
-  [Drone] Comparaison des encodeurs H264 matériels (Nvidia, Qualcomm) et
-  logiciels
-  \newline
+\end{itemize}
+Drone
+\begin{itemize}
+  \item Comparaison des propriétés des encodeurs H264 matériels (Nvidia,
+  Qualcomm) et logiciels afin de travailler sur les optimisations possibles avec
+  les fourniseurs et les équipes de développement
+\end{itemize}
 }
 %%%%%%%%%%%%%%%%%%
 %%% Altim Labs %%%
@@ -82,11 +87,11 @@ valgrind}
 {}                     % Titre part 4 - 
 {
 \begin{itemize}
-  \item Participation aux phases d'avant avec de potentiel client
-  \item Réalisation d'un POC de streaming H264 via RTSP sur la base d'une carte
-  imx6q.
-  \item Mise en place d'outil interne de communication et de gestion de projet
-  pour l'équipe forfait de la société.
+  \item Participation aux phases d'avant vente avec de potentiels clients
+  \item Réalisation d'un POC sur l'optimisation de la latence dans le 
+  streaming d'un flux H264 via RTSP sur la base d'une carte imx6q
+  \item Mise en place d'outils internes de communication et de gestion de projet
+  pour l'équipe forfait de la société. (suivi de bug, agile, git)
 \end{itemize}
 }
 %%%%%%%%%%%%%%%%%%
@@ -99,13 +104,17 @@ valgrind}
 {Nanterre}                 % Titre part 3 - Ville
 {}                         % Titre part 4 - 
 {
-Développement d’une fonctionnalité d’aggrégation de contenus pour Livebox 4 :
+Dans le cadre du développement de la Livebox 4 (gateway), j'ai
+participé à la réalisation de la fonction Disque Dur.
 \begin{itemize}
-  \item  Intégration de la brique opensource Gnome Tracker (ontologie, base de
-données)
-  \item Développement de plusieurs briques logicielles et librairies en C
- (statistiques, manager, indexeur, torrent)
-  \item Utilisation du framework Gnome Library, D-BUS, bus propriétaire
+  \item  Utilisation d'un outil open-source pour l'indexation automatique de
+  contenus sur le LAN. Demande d'évolution à la société editrice du logiciel
+  pour les besoins du projet (mulit-user, connecteur tiers \ldots) avec
+  redistribution des évolutions à la communauté
+  \item Mise en oeuvre d'outils spécifique pour communiquer avec les serveurs
+  d'authentification Orange (HTTP, API, json)
+  \item L'ensemble du système repose sur une dizaine d'applications connectées
+  vie un bus de communications propriétaire et DBus
 \end{itemize}
 \newline{}}
 %%%%%%%%%%%%%%%%
@@ -117,14 +126,19 @@ données)
 {Altim pour Bouygues Telecom} % Titre part 2 - Employeur
 {Vélizy}                      % Titre part 3 - Ville
 {}                            % Titre part 4 - 
-{Projet BBOX sensation (ADSL, Fibre et Cable)
+{Dans le cadre de l'évolution de son produit BBOX sensation, j'ai participé à
+différents phases du développement
 \begin{itemize}
-  \item Analyse de l’architecture middleware et proposition d’amélioration(process, threads, mémoire)
-  \item Analyse de l’usage mémoire (fuite, sysstat)
-  \item Analyse d’impact sur le système de solution technique : swap, compression kernel, rootfs
-  \item Intégration logicielle orientée performance et endurance.
-  \item Mise en place de KPI. Cohérence développement/validation/marketing.
-  \item Recherche d’optimisation du build system (Buildroot)
+  \item LE middleware ayant été acquis à partir d'un tiers, il fallu effectuer
+  des analyses de certaines briques logicielles afin de voir les défauts de
+  conception et proposer des alternatives fiables (temps et techniques)
+  \item Mise en place d'outils d'analyse de performance (buffering video,
+  mémoire, cpu)
+  \item Mise en place de KPI pertinents avec les chefs de projet et les
+  équipes techniques afin de remontées les améliorations continues du
+  logiciels.
+  \item Analyse du build system afin d'alléger les temps de compilation, et
+  intégrer les outils d'analyse de code (Sonar)
 \end{itemize}
 \newline{}}
 %%%%%%%%%%%%%%
@@ -132,18 +146,19 @@ données)
 %%%%%%%%%%%%%%
 \cventry
 {11/2011\\à 08/2012}   % Année
-{Architecte - Zodiac}  % Titre part 1
-{Altim pour Sofathome} % Titre part 2 - Employeur
+{Chef de projet}  % Titre part 1
+{Elsys pour Zodica} % Titre part 2 - Employeur
 {Elancourt}            % Titre part 3 - Ville
 {}                     % Titre part 4 - 
 {
+A400M -unité de contrôle du jaugeage
 \begin{itemize}
-  \item [A400M] unité de contrôle du jaugeage :
   \item Mise au point des logiciels pour la mise en service de l’avion
   \item Gestion du standard 19 pour le logiciel opérationnel (documentation, certification)
-  \item Gestion du standard 10 pour le boot loader
   \item Intervention sur toutes les étapes du cycle en V. Logiciel niveau A
-  \item [Sukhoi SSJ100] calculateur de gestion de carburant :
+\end{itemize}
+Sukhoi SSJ100 - calculateur de gestion de carburant
+\begin{itemize}
   \item Certification du standard 9 du logiciel auprès de l’EASA
   \item Mise en oeuvre d’un nouveau profil des réservoirs de carburant (planning, développement).
   \item Intervention sur toutes les étapes du cycle en V. Logiciel niveau B.
@@ -154,27 +169,29 @@ données)
 %%%%%%%%%%%%%%
 \cventry
 {09/2009\\à 10/2011}       % Année
-{Architecte - Développeur} % Titre part 1
-{Altim pour Safran}        % Titre part 2 - Employeur
+{Intégrateur - Développeur} % Titre part 1
+{CSSI pour Safran}         % Titre part 2 - Employeur
 {Massy}                    % Titre part 3 - Ville
 {}                         % Titre part 4 - 
 {
+Data Loader and Configuration System (DLCS) pour A350 XWB
 \begin{itemize}
-  \item Projet : Data Loader and Configuration System (DLCS) pour A350 XWB
   \item Rôle  de consultant sur les choix des outils de gestion de configuration, de traçabilité et de développement.
-  \item Mise au point d’un package Eclipse CDT.
-  \item Intégration des outils nécessaires au bon développement sous LINUX (GCC/PikeOS)
-  \item Intégration sous PikeOS des modules logiciels (25 000 lignes) afin d'obtenir un exécutable.
-  \item Passage de tests d'intégration bas niveau.
-  \item Interlocuteur privilégié avec les équipes de validation pour l'analyse des anomalies et gestion des reprises.
-  \item Projet : Software Pin Programming (SPP-BA) pour A350 XWBRédaction de la
-spécifiction logicielle
-  \item Mise en place d'un environnement de développement pour la plateforme SYSGO (simulateur et cible)
+  \item Mise au point des outils nécessaires au bon développement sous LINUX
+  (GCC/PikeOS)
+  \item Intégration par partie sous PikeOS (POSIX) des modules logiciels (25 000
+  lignes)
+  \item Interface avec les équipes de validation pour l'analyse des anomalies et
+  gestion des reprises.
+\end{itemize}
+Software Pin Programming (SPP-BA) pour A350 XWB
+\begin{itemize}
+  \item Rédaction de la spécifiction logicielle
+  \item Mise en place d'un environnement de développement pour la plateforme
+  SYSGO (simulateur et cible)
   \item Validation du design au travers d'une maquette, rédaction du document de design
-  \item Réalisation du logiciel selon la norme DO-178B niveau C
   \item Codage et mise au point de l’application en C POSIX
-  \item Mise en place de l’outil de traçabilité (Reqtify)
-  \item 
+  \item Mise en place de l’outil de traçabilité (Reqtify, regexp)
 \end{itemize}
 \newline{}}
 %%%%%%%%%%%%%%
@@ -183,25 +200,30 @@ spécifiction logicielle
 \cventry
 {01/2007\\à 08/2009}       % Année
 {Architecte - Développeur} % Titre part 1
-{Altim pour Thales}        % Titre part 2 - Employeur
+{CSSI pour Thales}        % Titre part 2 - Employeur
 {Meudon}                   % Titre part 3 - Ville
 {}                         % Titre part 4 - 
 {
+Calculateur de commande de vol pour Gulfstream G650
 \begin{itemize}
-  \item Projet : Calculateur de commande de vol (P20) pour Gulfstream G650
   \item Calculateur développé par dissemblance (2 hardware, 2 langages soit 4 configurations à gérer)
-  \item Rédaction de spécification pour les drivers A429 (DO178B niveau A) et Ethernet (DO178B niveau C)
-  \item Rédaction de la spécification pour l'application de qualification du calculateur (DO178B niveau D)
-  \item Pilotage en off-shore d'une équipe de développement de l'application de qualification en Roumanie
-  \item Pilotage de l'équipe de test de l'application de qualification en France
+  \item Rédaction de spécification pour les drivers A429 (DAL A) et Ethernet
+  (DAL C)
+  \item Rédaction de la spécification pour l'application de qualification du
+  calculateur (DAL D)
+  \item Pilotage d'une équipe de développement (4 pers - Roumanie)
+  et de l'équipe de test (2pers - France) de
+  l'application de qualification
   \item Mise au point de l'application de qualification sur environnement simulé
-  \item Intégration système de l'application de qualifiction avec les drivers sur cible (mono carte)
+  \item Intégration système de l'application de qualification avec les drivers
+  sur cible (mono carte)
   \item Intégration système de l'application de qualification du calculateur (4 cartes)
-  \item Projet : Système FADEC pour turbine d'hélicoptère
-  \item Mise à jour des documents de spécification pour le driver A429
-  \item Conception et développement du logiciel pour le driver A429
-  \item Reprise de la conception et du développement du driver CAN suite aux évolutions des besoins
-  \item Intégration sur banc logiciel
+\end{itemize}
+Système FADEC pour turbine d'hélicoptère
+\begin{itemize}
+  \item Spécification , conception et développement du logiciel pour le driver
+  A429
+  \item Evolution du driver CAN suite aux besoins client
   \item Intégration système : BOOT, MiddleWare, drivers et application de tests
   \item Mise au point du logiciel applicatif de qualification
 \end{itemize}
@@ -231,6 +253,9 @@ spécifiction logicielle
 \cventry{1997}{Baccalauréat Science et Technique de Laboratoire}{Lycée Fresnel}{(75)}{}{Spécialité Optique}
 
 \section{Centres d'intérêt}
-\cvcomputer{}{Maquette (voiture, aéronefs)}{}{Jeux de plateau/carte}
+\cvitem{Maquette}{Réalisation de maquette avion militaire 1/48ème et automobile
+1/24ème}
+\cvitem{Jeux de société}{Jeu de plateau collaboratif, Jeu de
+placement/programmation}
 
 \end{document}\grid
