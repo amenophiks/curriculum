@@ -1,0 +1,236 @@
+\documentclass[10pt,a4paper]{moderncv}       % Only accpets 10pt, 11pt, 12pt
+\moderncvtheme[blue]{classic}                % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% \moderncvtheme[blue]{casual}                  % idem
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMMANDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+
+\renewcommand{\labelitemi}{$\triangleright$} % list icon as triangle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PERSONAL DATA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\firstname{Fabrice}
+\familyname{LOUVEAU}
+\title{Architecte - Développeur}              
+\address{23 b rue Jean Marin Naudin}{92220 BAGNEUX}
+\mobile{06.08.61.29.84}                   % optional, remove the line if not wanted
+% \phone{}                    % optional, remove the line if not wanted
+% \fax{}                      % optional, remove the line if not wanted
+\email{fabrice.louveau@gmail.com}               % optional, remove the line if not wanted
+\homepage{www.doyoubuzz.com/louveau-fabrice} % optional, remove the line if not wanted 
+%\extrainfo{Permis B}    % optional, remove the line if not wanted
+% \photo[64pt]{picture}                       % '64pt' is the height the picture must be resized to and 'picture' is the
+                                            % name of the picture file; optional, remove the line if not wanted
+\quote{10 ans dans le développement de logiciels embarqués}               %
+% optional, remove the line if not wanted
+
+\nopagenumbers{}                         % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+\section{Compétences}
+\cvcomputer{Langage}{C/C++, POSIX, Python}{G-conf}{git, svn, Perforce,
+ClearCase, CMSynergy}
+\cvcomputer{Système}{Yocto, Buildroot, Gnome Lib, dbus}{Méthodologies}{Agile, Scrum, DO-178B}
+\cvcomputer{Traçabilité}{DOORS, Reqtify}{Outils}{Eclipse, GDB, GCC,
+valgrind}
+\cvcomputer{Langue}{Anglais technique}{Autre}{Doxygen}
+
+\section{Expériences}
+%%%%%%%%%%%%%%
+%%% Parrot %%%
+%%%%%%%%%%%%%%
+\cventry
+{depuis\\04/2016}   % Année
+{Développeur}       % Titre part 1
+{Altim pour Parrot} % Titre part 2 - Employeur
+{Paris}             % Titre part 3 - Ville
+{}                  % Titre part 4 - 
+{
+  [Automotive] Intégration des fonctions Android Auto et
+  Carplay dans les équipements OEM de Parrot. J'accompagne les autorités de
+  certification et les équipes produits.
+  \newline
+  [Drone] Comparaison des encodeurs H264 matériels (Nvidia, Qualcomm) et
+  logiciels
+  \newline
+}
+%%%%%%%%%%%%%%%%%%
+%%% Altim Labs %%%
+%%%%%%%%%%%%%%%%%%
+\cventry
+{11/2015\\à 03/2016}   % Année
+{Référent Technique}   % Titre part 1
+{Altim}                % Titre part 2 - Employeur
+{Boulogne Billancourt} % Titre part 3 - Ville
+{}                     % Titre part 4 - 
+{
+\begin{itemize}
+  \item Participation aux phases d'avant avec de potentiel client
+  \item Réalisation d'un POC de streaming H264 via RTSP sur la base d'une carte
+  imx6q.
+  \item Mise en place d'outil interne de communication et de gestion de projet
+  pour l'équipe forfait de la société.
+\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%
+%%% Softathome %%%
+%%%%%%%%%%%%%%%%%%
+\cventry
+{03/2014\\à 10/2015}       % Année
+{Architecte - Développeur} % Titre part 1
+{Altim pour Softathome}    % Titre part 2 - Employeur
+{Nanterre}                 % Titre part 3 - Ville
+{}                         % Titre part 4 - 
+{
+Développement d’une fonctionnalité d’aggrégation de contenus pour Livebox 4 :
+\begin{itemize}
+  \item  Intégration de la brique opensource Gnome Tracker (ontologie, base de
+données)
+  \item Développement de plusieurs briques logicielles et librairies en C
+ (statistiques, manager, indexeur, torrent)
+  \item Utilisation du framework Gnome Library, D-BUS, bus propriétaire
+\end{itemize}
+\newline{}}
+%%%%%%%%%%%%%%%%
+%%% Bouygues %%%
+%%%%%%%%%%%%%%%%
+\cventry
+{09/2012\\à 02/2014}          % Année
+{Architecte - Développeur}    % Titre part 1
+{Altim pour Bouygues Telecom} % Titre part 2 - Employeur
+{Vélizy}                      % Titre part 3 - Ville
+{}                            % Titre part 4 - 
+{Projet BBOX sensation (ADSL, Fibre et Cable)
+\begin{itemize}
+  \item Analyse de l’architecture middleware et proposition d’amélioration(process, threads, mémoire)
+  \item Analyse de l’usage mémoire (fuite, sysstat)
+  \item Analyse d’impact sur le système de solution technique : swap, compression kernel, rootfs
+  \item Intégration logicielle orientée performance et endurance.
+  \item Mise en place de KPI. Cohérence développement/validation/marketing.
+  \item Recherche d’optimisation du build system (Buildroot)
+\end{itemize}
+\newline{}}
+%%%%%%%%%%%%%%
+%%% Zodiac %%%
+%%%%%%%%%%%%%%
+\cventry
+{11/2011\\à 08/2012}   % Année
+{Architecte - Zodiac}  % Titre part 1
+{Altim pour Sofathome} % Titre part 2 - Employeur
+{Elancourt}            % Titre part 3 - Ville
+{}                     % Titre part 4 - 
+{
+\begin{itemize}
+  \item [A400M] unité de contrôle du jaugeage :
+  \item Mise au point des logiciels pour la mise en service de l’avion
+  \item Gestion du standard 19 pour le logiciel opérationnel (documentation, certification)
+  \item Gestion du standard 10 pour le boot loader
+  \item Intervention sur toutes les étapes du cycle en V. Logiciel niveau A
+  \item [Sukhoi SSJ100] calculateur de gestion de carburant :
+  \item Certification du standard 9 du logiciel auprès de l’EASA
+  \item Mise en oeuvre d’un nouveau profil des réservoirs de carburant (planning, développement).
+  \item Intervention sur toutes les étapes du cycle en V. Logiciel niveau B.
+\end{itemize}
+\newline{}}
+%%%%%%%%%%%%%%
+%%% Safran %%%
+%%%%%%%%%%%%%%
+\cventry
+{09/2009\\à 10/2011}       % Année
+{Architecte - Développeur} % Titre part 1
+{Altim pour Safran}        % Titre part 2 - Employeur
+{Massy}                    % Titre part 3 - Ville
+{}                         % Titre part 4 - 
+{
+\begin{itemize}
+  \item Projet : Data Loader and Configuration System (DLCS) pour A350 XWB
+  \item Rôle  de consultant sur les choix des outils de gestion de configuration, de traçabilité et de développement.
+  \item Mise au point d’un package Eclipse CDT.
+  \item Intégration des outils nécessaires au bon développement sous LINUX (GCC/PikeOS)
+  \item Intégration sous PikeOS des modules logiciels (25 000 lignes) afin d'obtenir un exécutable.
+  \item Passage de tests d'intégration bas niveau.
+  \item Interlocuteur privilégié avec les équipes de validation pour l'analyse des anomalies et gestion des reprises.
+  \item Projet : Software Pin Programming (SPP-BA) pour A350 XWBRédaction de la
+spécifiction logicielle
+  \item Mise en place d'un environnement de développement pour la plateforme SYSGO (simulateur et cible)
+  \item Validation du design au travers d'une maquette, rédaction du document de design
+  \item Réalisation du logiciel selon la norme DO-178B niveau C
+  \item Codage et mise au point de l’application en C POSIX
+  \item Mise en place de l’outil de traçabilité (Reqtify)
+  \item 
+\end{itemize}
+\newline{}}
+%%%%%%%%%%%%%%
+%%% Thales %%%
+%%%%%%%%%%%%%%
+\cventry
+{01/2007\\à 08/2009}       % Année
+{Architecte - Développeur} % Titre part 1
+{Altim pour Thales}        % Titre part 2 - Employeur
+{Meudon}                   % Titre part 3 - Ville
+{}                         % Titre part 4 - 
+{
+\begin{itemize}
+  \item Projet : Calculateur de commande de vol (P20) pour Gulfstream G650
+  \item Calculateur développé par dissemblance (2 hardware, 2 langages soit 4 configurations à gérer)
+  \item Rédaction de spécification pour les drivers A429 (DO178B niveau A) et Ethernet (DO178B niveau C)
+  \item Rédaction de la spécification pour l'application de qualification du calculateur (DO178B niveau D)
+  \item Pilotage en off-shore d'une équipe de développement de l'application de qualification en Roumanie
+  \item Pilotage de l'équipe de test de l'application de qualification en France
+  \item Mise au point de l'application de qualification sur environnement simulé
+  \item Intégration système de l'application de qualifiction avec les drivers sur cible (mono carte)
+  \item Intégration système de l'application de qualification du calculateur (4 cartes)
+  \item Projet : Système FADEC pour turbine d'hélicoptère
+  \item Mise à jour des documents de spécification pour le driver A429
+  \item Conception et développement du logiciel pour le driver A429
+  \item Reprise de la conception et du développement du driver CAN suite aux évolutions des besoins
+  \item Intégration sur banc logiciel
+  \item Intégration système : BOOT, MiddleWare, drivers et application de tests
+  \item Mise au point du logiciel applicatif de qualification
+\end{itemize}
+\newline{}}
+%%%%%%%%%%%%%%%%%%
+%%% Elios Info %%%
+%%%%%%%%%%%%%%%%%%
+\cventry
+{09/2005\\à 12/2006}    % Année
+{Testeur - Développeur} % Titre part 1
+{Elios Informatique}    % Titre part 2 - Employeur
+{Région parisienne}     % Titre part 3 - Ville
+{}                      % Titre part 4 - 
+{
+[Projet M51]: Développement ADA et tests sur missile nucléaire
+\newline{}
+[Projet SCI, A380] Suivi des sous-traitant indiens pour les tests unitaires
+\newline{}
+[Projet ETRAC, A380] Rédaction plan d’intégration/acceptation et passage
+  des test
+\newline{}}
+
+
+\section{Diplômes et Études}
+\cventry{2003}{Ingénieur en Elecronique et Informatique}{Université d'Orléans}{(45)}{}{Spécialité Systèmes Embarqués}
+\cventry{1999}{D.U.T Mesures Physiques}{Université d'Orsay}{(91)}{}{Spécialité Techniques Instrumentales}
+\cventry{1997}{Baccalauréat Science et Technique de Laboratoire}{Lycée Fresnel}{(75)}{}{Spécialité Optique}
+
+\section{Centres d'intérêt}
+\cvcomputer{}{Maquette (voiture, aéronefs)}{}{Jeux de plateau/carte}
+
+\end{document}\grid
