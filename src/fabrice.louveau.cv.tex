@@ -16,7 +16,7 @@
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
 
-%\renewcommand{\labelitemi}{$\triangleright$} % list icon as triangle
+\renewcommand{\labelitemi}{$\triangleright$} % list icon as triangle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PERSONAL DATA
@@ -29,11 +29,11 @@
 % \phone{}                    % optional, remove the line if not wanted
 % \fax{}                      % optional, remove the line if not wanted
 \email{fabrice.louveau@gmail.com}               % optional, remove the line if not wanted
-\homepage{www.doyoubuzz.com/louveau-fabrice} % optional, remove the line if not wanted 
-%\extrainfo{Permis B}    % optional, remove the line if not wanted
+%\homepage{www.doyoubuzz.com/louveau-fabrice} % optional, remove the line if not
+% wanted \extrainfo{Permis B}    % optional, remove the line if not wanted
 % \photo[64pt]{picture}                       % '64pt' is the height the picture must be resized to and 'picture' is the
                                             % name of the picture file; optional, remove the line if not wanted
-\quote{10 ans dans le développement de logiciels embarqués}               %
+\quote{12 ans dans le développement de logiciels embarqués}               %
 % optional, remove the line if not wanted
 
 \nopagenumbers{}                         % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -52,6 +52,7 @@ ClearCase, CMSynergy}
 valgrind}
 \cvcomputer{Langue}{Anglais technique}{Autre}{Doxygen}
 
+\vspace*{5mm}
 \section{Expériences}
 %%%%%%%%%%%%%%
 %%% Parrot %%%
@@ -63,19 +64,20 @@ valgrind}
 {Paris}             % Titre part 3 - Ville
 {}                  % Titre part 4 - 
 {
-Automotive
+Dans le cadre des produits automotive du groupe, Parrot intègre les solutions de
+projection des grands groupes.
 \begin{itemize}
-  \item Intégration des fonctions Android Auto et
-  Carplay dans les équipements OEM de Parrot. J'accompagne les autorités de
-  certification et les équipes produits.
-\end{itemize}
-Drone
-\begin{itemize}
-  \item Comparaison des propriétés des encodeurs H264 matériels (Nvidia,
-  Qualcomm) et logiciels afin de travailler sur les optimisations possibles avec
-  les fourniseurs et les équipes de développement
+\setlength{\itemindent}{2mm}
+  \item Ajout du support CarLife (Baidu) dans le produit
+  \item Ajout du support CarPlay (Apple). Certification en cours.
+  \item Ajout du support AndroidAuto (Google). Certification obtenue.
+  \item Solutions multi-projets en C/C++.
+  \item Intéraction forte avec les équipes projets et les équipes middleware
+  pour faciliter l'intégration système de notre solution.
+  \item Etude sur les décodeurs matériels et logiciels H264 pour les drones
 \end{itemize}
 }
+\vspace*{3mm}
 %%%%%%%%%%%%%%%%%%
 %%% Altim Labs %%%
 %%%%%%%%%%%%%%%%%%
@@ -87,13 +89,16 @@ Drone
 {}                     % Titre part 4 - 
 {
 \begin{itemize}
-  \item Participation aux phases d'avant vente avec de potentiels clients
-  \item Réalisation d'un POC sur l'optimisation de la latence dans le 
-  streaming d'un flux H264 via RTSP sur la base d'une carte imx6q
-  \item Mise en place d'outils internes de communication et de gestion de projet
-  pour l'équipe forfait de la société. (suivi de bug, agile, git)
+\setlength{\itemindent}{2mm}
+  \item Participation aux phases d'avant vente
+  \item Réalisation d'un POC de streaming H264 via RTSP sur la base d'une carte
+  i-mx6.
+  \item Optimisation de la chaîne de transmission des données vidéo.
+  \item Mise en place d'outil interne de communication et de gestion de projet
+  pour l'équipe forfait de la société.
 \end{itemize}
 }
+\vspace*{3mm}
 %%%%%%%%%%%%%%%%%%
 %%% Softathome %%%
 %%%%%%%%%%%%%%%%%%
@@ -104,19 +109,17 @@ Drone
 {Nanterre}                 % Titre part 3 - Ville
 {}                         % Titre part 4 - 
 {
-Dans le cadre du développement de la Livebox 4 (gateway), j'ai
-participé à la réalisation de la fonction Disque Dur.
+Développement d’une fonctionnalité d’aggrégation de contenus pour Livebox 4
 \begin{itemize}
-  \item  Utilisation d'un outil open-source pour l'indexation automatique de
-  contenus sur le LAN. Demande d'évolution à la société editrice du logiciel
-  pour les besoins du projet (mulit-user, connecteur tiers \ldots) avec
-  redistribution des évolutions à la communauté
-  \item Mise en oeuvre d'outils spécifique pour communiquer avec les serveurs
-  d'authentification Orange (HTTP, API, json)
-  \item L'ensemble du système repose sur une dizaine d'applications connectées
-  vie un bus de communications propriétaire et DBus
+\setlength{\itemindent}{2mm}
+  \item  Intégration de la brique opensource Gnome Tracker (ontologie, base de
+données)
+  \item Développement de plusieurs briques logicielles et librairies en C
+ (statistiques, manager, indexeur, torrent)
+  \item Utilisation du framework Gnome Library, D-BUS, bus propriétaire
 \end{itemize}
-\newline{}}
+}
+\vspace*{3mm}
 %%%%%%%%%%%%%%%%
 %%% Bouygues %%%
 %%%%%%%%%%%%%%%%
@@ -126,108 +129,111 @@ participé à la réalisation de la fonction Disque Dur.
 {Altim pour Bouygues Telecom} % Titre part 2 - Employeur
 {Vélizy}                      % Titre part 3 - Ville
 {}                            % Titre part 4 - 
-{Dans le cadre de l'évolution de son produit BBOX sensation, j'ai participé à
-différents phases du développement
+{Projet BBOX sensation (ADSL, Fibre et Cable)
 \begin{itemize}
-  \item LE middleware ayant été acquis à partir d'un tiers, il fallu effectuer
-  des analyses de certaines briques logicielles afin de voir les défauts de
-  conception et proposer des alternatives fiables (temps et techniques)
-  \item Mise en place d'outils d'analyse de performance (buffering video,
-  mémoire, cpu)
-  \item Mise en place de KPI pertinents avec les chefs de projet et les
-  équipes techniques afin de remontées les améliorations continues du
-  logiciels.
-  \item Analyse du build system afin d'alléger les temps de compilation, et
-  intégrer les outils d'analyse de code (Sonar)
+\setlength{\itemindent}{2mm}
+  \item Analyse de l’architecture middleware et proposition d’amélioration(process, threads, mémoire)
+  \item Analyse de l’usage mémoire (fuite, sysstat)
+  \item Analyse d’impact sur le système de solution technique : swap, compression kernel, rootfs
+  \item Intégration logicielle orientée performance et endurance.
+  \item Mise en place de KPI. Cohérence développement/validation/marketing.
+  \item Recherche d’optimisation du build system (Buildroot)
 \end{itemize}
-\newline{}}
+}
+\vspace*{3mm}
 %%%%%%%%%%%%%%
 %%% Zodiac %%%
 %%%%%%%%%%%%%%
 \cventry
 {11/2011\\à 08/2012}   % Année
-{Chef de projet}  % Titre part 1
-{Elsys pour Zodica} % Titre part 2 - Employeur
+{Architecte - Zodiac}  % Titre part 1
+{Altim pour Sofathome} % Titre part 2 - Employeur
 {Elancourt}            % Titre part 3 - Ville
 {}                     % Titre part 4 - 
 {
-A400M -unité de contrôle du jaugeage
+[A400M] unité de contrôle du jaugeage
 \begin{itemize}
+\setlength{\itemindent}{2mm}
   \item Mise au point des logiciels pour la mise en service de l’avion
   \item Gestion du standard 19 pour le logiciel opérationnel (documentation, certification)
+  \item Gestion du standard 10 pour le boot loader
   \item Intervention sur toutes les étapes du cycle en V. Logiciel niveau A
 \end{itemize}
-Sukhoi SSJ100 - calculateur de gestion de carburant
+[Sukhoi SSJ100] calculateur de gestion de carburant
 \begin{itemize}
+\setlength{\itemindent}{2mm}
   \item Certification du standard 9 du logiciel auprès de l’EASA
   \item Mise en oeuvre d’un nouveau profil des réservoirs de carburant (planning, développement).
   \item Intervention sur toutes les étapes du cycle en V. Logiciel niveau B.
 \end{itemize}
-\newline{}}
+}
+\vspace*{3mm}
 %%%%%%%%%%%%%%
 %%% Safran %%%
 %%%%%%%%%%%%%%
 \cventry
 {09/2009\\à 10/2011}       % Année
-{Intégrateur - Développeur} % Titre part 1
-{CSSI pour Safran}         % Titre part 2 - Employeur
+{Architecte - Développeur} % Titre part 1
+{Altim pour Safran}        % Titre part 2 - Employeur
 {Massy}                    % Titre part 3 - Ville
 {}                         % Titre part 4 - 
 {
-Data Loader and Configuration System (DLCS) pour A350 XWB
+Projet : Data Loader and Configuration System (DLCS) pour A350 XWB
 \begin{itemize}
+\setlength{\itemindent}{2mm}
   \item Rôle  de consultant sur les choix des outils de gestion de configuration, de traçabilité et de développement.
-  \item Mise au point des outils nécessaires au bon développement sous LINUX
-  (GCC/PikeOS)
-  \item Intégration par partie sous PikeOS (POSIX) des modules logiciels (25 000
-  lignes)
-  \item Interface avec les équipes de validation pour l'analyse des anomalies et
-  gestion des reprises.
+  \item Mise au point d’un package Eclipse CDT.
+  \item Intégration des outils nécessaires au bon développement sous LINUX (GCC/PikeOS)
+  \item Intégration sous PikeOS des modules logiciels (25 000 lignes) afin d'obtenir un exécutable.
+  \item Passage de tests d'intégration bas niveau.
+  \item Interlocuteur privilégié avec les équipes de validation pour l'analyse des anomalies et gestion des reprises.
 \end{itemize}
-Software Pin Programming (SPP-BA) pour A350 XWB
+Projet : Software Pin Programming (SPP-BA) pour A350 XWBRédaction de la
+spécifiction logicielle
 \begin{itemize}
-  \item Rédaction de la spécifiction logicielle
-  \item Mise en place d'un environnement de développement pour la plateforme
-  SYSGO (simulateur et cible)
+\setlength{\itemindent}{2mm}
+  \item Mise en place d'un environnement de développement pour la plateforme SYSGO (simulateur et cible)
   \item Validation du design au travers d'une maquette, rédaction du document de design
+  \item Réalisation du logiciel selon la norme DO-178B niveau C
   \item Codage et mise au point de l’application en C POSIX
-  \item Mise en place de l’outil de traçabilité (Reqtify, regexp)
+  \item Mise en place de l’outil de traçabilité (Reqtify)
 \end{itemize}
-\newline{}}
+}
+\vspace*{3mm}
 %%%%%%%%%%%%%%
 %%% Thales %%%
 %%%%%%%%%%%%%%
 \cventry
 {01/2007\\à 08/2009}       % Année
 {Architecte - Développeur} % Titre part 1
-{CSSI pour Thales}        % Titre part 2 - Employeur
+{Altim pour Thales}        % Titre part 2 - Employeur
 {Meudon}                   % Titre part 3 - Ville
 {}                         % Titre part 4 - 
 {
-Calculateur de commande de vol pour Gulfstream G650
+Projet : Calculateur de commande de vol (P20) pour Gulfstream G650
 \begin{itemize}
+\setlength{\itemindent}{2mm}
   \item Calculateur développé par dissemblance (2 hardware, 2 langages soit 4 configurations à gérer)
-  \item Rédaction de spécification pour les drivers A429 (DAL A) et Ethernet
-  (DAL C)
-  \item Rédaction de la spécification pour l'application de qualification du
-  calculateur (DAL D)
-  \item Pilotage d'une équipe de développement (4 pers - Roumanie)
-  et de l'équipe de test (2pers - France) de
-  l'application de qualification
+  \item Rédaction de spécification pour les drivers A429 (DO178B niveau A) et Ethernet (DO178B niveau C)
+  \item Rédaction de la spécification pour l'application de qualification du calculateur (DO178B niveau D)
+  \item Pilotage en off-shore d'une équipe de développement de l'application de qualification en Roumanie
+  \item Pilotage de l'équipe de test de l'application de qualification en France
   \item Mise au point de l'application de qualification sur environnement simulé
-  \item Intégration système de l'application de qualification avec les drivers
-  sur cible (mono carte)
+  \item Intégration système de l'application de qualifiction avec les drivers sur cible (mono carte)
   \item Intégration système de l'application de qualification du calculateur (4 cartes)
 \end{itemize}
-Système FADEC pour turbine d'hélicoptère
+Projet : Système FADEC pour turbine d'hélicoptère
 \begin{itemize}
-  \item Spécification , conception et développement du logiciel pour le driver
-  A429
-  \item Evolution du driver CAN suite aux besoins client
+\setlength{\itemindent}{2mm}
+  \item Mise à jour des documents de spécification pour le driver A429
+  \item Conception et développement du logiciel pour le driver A429
+  \item Reprise de la conception et du développement du driver CAN suite aux évolutions des besoins
+  \item Intégration sur banc logiciel
   \item Intégration système : BOOT, MiddleWare, drivers et application de tests
   \item Mise au point du logiciel applicatif de qualification
 \end{itemize}
-\newline{}}
+}
+\vspace*{3mm}
 %%%%%%%%%%%%%%%%%%
 %%% Elios Info %%%
 %%%%%%%%%%%%%%%%%%
@@ -238,13 +244,13 @@ Système FADEC pour turbine d'hélicoptère
 {Région parisienne}     % Titre part 3 - Ville
 {}                      % Titre part 4 - 
 {
-[Projet M51]: Développement ADA et tests sur missile nucléaire
+[Projet M51] Développement ADA et tests sur missile nucléaire
 \newline{}
 [Projet SCI, A380] Suivi des sous-traitant indiens pour les tests unitaires
 \newline{}
 [Projet ETRAC, A380] Rédaction plan d’intégration/acceptation et passage
   des test
-\newline{}}
+}
 
 
 \section{Diplômes et Études}
@@ -253,9 +259,7 @@ Système FADEC pour turbine d'hélicoptère
 \cventry{1997}{Baccalauréat Science et Technique de Laboratoire}{Lycée Fresnel}{(75)}{}{Spécialité Optique}
 
 \section{Centres d'intérêt}
-\cvitem{Maquette}{Réalisation de maquette avion militaire 1/48ème et automobile
-1/24ème}
-\cvitem{Jeux de société}{Jeu de plateau collaboratif, Jeu de
-placement/programmation}
+\cvcomputer{}{Maquette (voiture, aéronefs)}{}{}
+\cvcomputer{}{Jeux de plateau}{}{}
 
 \end{document}\grid
